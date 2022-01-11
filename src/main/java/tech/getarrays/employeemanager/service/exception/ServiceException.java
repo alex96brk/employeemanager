@@ -1,2 +1,15 @@
-package tech.getarrays.employeemanager.service.exception;public class ServiceException {
+package tech.getarrays.employeemanager.service.exception;
+
+public class ServiceException extends RuntimeException {
+
+    public ServiceException(String message) {
+        super(message);
+    }
+
+    public ServiceException(Throwable cause) {
+        super(cause);
+    }
+
+    public ServiceException() {
+    }
 }
