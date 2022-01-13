@@ -26,7 +26,7 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public Employee updaEmployee(Employee employee) {
+    public Employee updateEmployee(Employee employee) {
         return employeeRepository.save(employee);
     }
 
@@ -36,6 +36,6 @@ public class EmployeeService {
     }
 
     public void deleteEmployee(Long id) {
-        employeeRepository.deleteEmployeeById(id);
+        employeeRepository.deleteById(id);
     }
 }
